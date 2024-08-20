@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Datos Personales</h2>
+        <form id="personal-form" action="#" method="post" onsubmit="return validateEmail()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error-message"></span>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label for="pais">País de Residencia:</label>
+            <select id="pais" name="pais" required>
+                <option value="argentina">Argentina</option>
+                <option value="mexico">México</option>
+                <option value="españa">España</option>
+                <option value="chile">Chile</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <button onclick="setTheme('style.css')">Estándar</button>
+    <button onclick="setTheme('high-contrast.css')">Alto Contraste</button>
+
+    <script>
+        function setTheme(themeName) {
+            document.querySelector('link[rel="stylesheet"]').setAttribute('href', themeName);
+        }
+
+        function validateEmail() {
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.textContent = 'Por favor, introduce un email válido.';
+                emailError.style.color = 'red';
+                emailInput.style.borderColor = 'red';
+                return false;
+            } else {
+                emailError.textContent = '';
+                emailInput.style.borderColor = '';
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
