@@ -3,6 +3,7 @@ Aquí está el código:
 
 Cómo Funciona
 HTML: El formulario recoge los datos personales: Nombre, Apellido, Email, Fecha de nacimiento y País de residencia.
+
 CSS Estándar: Un diseño limpio con un fondo blanco, texto oscuro, y botones verdes.
 CSS Alto Contraste: Un diseño optimizado para accesibilidad, con un fondo negro, texto amarillo, y bordes visibles.
 Puedes cambiar entre ambos estilos con los botones incluidos en el HTML. Solo necesitas tener los archivos style.css y high-contrast.css en la misma carpeta que el archivo HTML.
