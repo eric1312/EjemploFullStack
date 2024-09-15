@@ -27,3 +27,16 @@ CSS:
 
 El estilo de error se controla en el script, por lo que no necesitas modificar el CSS adicionalmente para este caso específico.
 Con este código, el usuario será informado si el email que introduce no tiene un formato correcto, impidiendo el envío del formulario hasta que lo corrija.
+
+<------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+CLASE 5 ACTIVIDAD DE LA CLASE 
+En la carpeta de la actividad 5 se encuentra la actividad con su bootstrap y en cada clase de los campos tiene los atributos modificados para que que sean 
+reducidos para que puedan tomar la resolucion de notebook, tablet y celulares
+
+
+Retomar el ejercicio del formulario de registro de las primeras clases y adaptarlo utilizando Bootstrap.
+
+Deberán realizar las validaciones correspondientes y asegurar los campos obligatorios.
+
+Explorar la posibilidad de pensar en 3 resoluciones: notebook, Tablet y celular de 7”
